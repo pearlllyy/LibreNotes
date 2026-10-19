@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Libre Notes</title>
+  <link href="/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#top">
+        <img src="/assets/Images/logo.png" alt="Libre Notes logo" width="32" height="32" class="me-2">
+        LibreNotes
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#browse">Browse notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#guidelines">Guidelines</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-3"><a class="nav-link" href="#">Log in</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="#">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <header class="py-5 bg-body-tertiary border-bottom">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold">Find study notes. Share yours.</h1>
+            <p class="lead text-body-secondary mt-3">
+              Libre Notes is a free website where students share their own study notes and find notes from others, so nobody has to start from scratch.
+            </p>
+
+            <form class="mt-4" action="#" role="search">
+              <div class="row g-2">
+                <div class="col-12">
+                  <label for="heroSearch" class="visually-hidden">Search notes</label>
+                  <input type="search" class="form-control form-control-lg" id="heroSearch" placeholder="Search by title, subject, or keyword">
+                </div>
+                <div class="col-sm-6">
+                  <label for="heroSubject" class="visually-hidden">Subject</label>
+                  <select class="form-select" id="heroSubject">
+                    <option selected>All subjects</option>
+                    <option>Biology</option>
+                    <option>Mathematics</option>
+                    <option>History</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label for="heroLevel" class="visually-hidden">Education level</label>
+                  <select class="form-select" id="heroLevel">
+                    <option selected>All levels</option>
+                    <option>High School</option>
+                    <option>College</option>
+                  </select>
+                </div>
+                <div class="col-12 d-grid d-sm-flex gap-2 justify-content-sm-center justify-content-lg-start mt-3">
+                  <button type="submit" class="btn btn-primary btn-lg px-4">Search notes</button>
+                  <a href="#" class="btn btn-outline-secondary btn-lg px-4">Sign up to share</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="ratio ratio-4x3 rounded-3">
+              <div class="d-flex align-items-center justify-content-center text-secondary">
+                <img src="/assets/Images/hero.png" alt="Hero image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <div class="container py-lg-3">
+        <div class="text-center mx-auto col-lg-7">
+          <h2 class="fw-bold">Stop recreating notes that already exist</h2>
+          <p class="text-body-secondary mb-0">
+            Students spend hours rewriting notes someone else has already made. There was no free, student-run place built for finding and sharing good study materials, so we made one.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-5 bg-body-tertiary border-top border-bottom">
+      <div class="container py-lg-4">
+        <div class="text-center mx-auto mb-5 col-lg-7">
+          <h2 class="fw-bold">Made by students, for students</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="bg-secondary-subtle text-secondary border rounded d-inline-flex align-items-center justify-content-center mb-3 px-3 py-2 small"><img src="/assets/Icons/share.png" alt="Share icon" width="40" height="40"></div>
+                <h3 class="h5 card-title">Share your notes</h3>
+                <p class="card-text text-body-secondary">Type notes directly on the site, or upload them as a PDF or image.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="bg-secondary-subtle text-secondary border rounded d-inline-flex align-items-center justify-content-center mb-3 px-3 py-2 small"><img src="/assets/Icons/find.png" alt="Search icon" width="40" height="40"></div>
+                <h3 class="h5 card-title">Find notes faster</h3>
+                <p class="card-text text-body-secondary">Search by title, subject, or keyword instead of starting from scratch.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="bg-secondary-subtle text-secondary border rounded d-inline-flex align-items-center justify-content-center mb-3 px-3 py-2 small"><img src="/assets/Icons/filter.png" alt="Filter icon" width="40" height="40"></div>
+                <h3 class="h5 card-title">Filter your way</h3>
+                <p class="card-text text-body-secondary">Narrow results by subject and education level, such as High School or College.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="bg-secondary-subtle text-secondary border rounded d-inline-flex align-items-center justify-content-center mb-3 px-3 py-2 small"><img src="/assets/Icons/upvote.png" alt="Upvote icon" width="40" height="40"></div>
+                <h3 class="h5 card-title">Upvote what helps</h3>
+                <p class="card-text text-body-secondary">Mark notes as helpful so the best ones are easy to spot.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="bg-secondary-subtle text-secondary border rounded d-inline-flex align-items-center justify-content-center mb-3 px-3 py-2 small"><img src="/assets/Icons/free.png" alt="Share icon" width="40" height="40"></div>
+                <h3 class="h5 card-title">Free forever</h3>
+                <p class="card-text text-body-secondary">No ads and no premium tiers. Libre Notes stays free for every student.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="bg-secondary-subtle text-secondary border rounded d-inline-flex align-items-center justify-content-center mb-3 px-3 py-2 small"><img src="/assets/Icons/mobile.png" alt="Mobile icon" width="40" height="40"></div>
+                <h3 class="h5 card-title">Built for mobile</h3>
+                <p class="card-text text-body-secondary">Browse and read notes comfortably on your phone, tablet, or computer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="browse" class="py-5">
+      <div class="container py-lg-4">
+        <div class="text-center mx-auto mb-5 col-lg-7">
+          <h2 class="fw-bold">Preview the latest notes</h2>
+          <p class="text-body-secondary">Anyone can look around. Create a free account when you are ready to share.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="ratio ratio-4x3 bg-secondary-subtle">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><img src="/assets/Images/cell-div.jpg" alt="Cell Division thumbnail" width="75%" height="100%"></div>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 card-title">Cell Division: Mitosis Summary</h3>
+                <span class="badge text-bg-primary">Biology</span>
+                <span class="badge text-bg-secondary">High School</span>
+              </div>
+              <div class="card-footer d-flex justify-content-between small text-body-secondary">
+                <span><img src="/assets/Icons/up-arrow.png" alt="Upvote icon" width="15" height="15"> 24 helpful</span>
+                <a href="#" class="stretched-link">View note</a>
+              </div>
+            </div>
+          </div>    
+          <div class="col">
+            <div class="card h-100">
+              <div class="ratio ratio-4x3 bg-secondary-subtle">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><img src="/assets/Images/dsa.jpg" alt="dsa" width="75%" height="100%"></div>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 card-title">Data Structures and Algorithms</h3>
+                <span class="badge text-bg-primary">Computer Science</span>
+                <span class="badge text-bg-secondary">College</span>
+              </div>
+              <div class="card-footer d-flex justify-content-between small text-body-secondary">
+                <span><img src="/assets/Icons/up-arrow.png" alt="Upvote icon" width="15" height="15"> 24 helpful</span>
+                <a href="#" class="stretched-link">View note</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="ratio ratio-4x3 bg-secondary-subtle">
+                <div class="d-flex align-items-center justify-content-center text-secondary"><img src="/assets/Images/ww1.jpg" alt="World War I thumbnail" width="75%" height="100%"></div>
+              </div>
+              <div class="card-body">
+                <h3 class="h6 card-title">Causes of World War I</h3>
+                <span class="badge text-bg-primary">History</span>
+                <span class="badge text-bg-secondary">High School</span>
+              </div>
+              <div class="card-footer d-flex justify-content-between small text-body-secondary">
+                <span><img src="/assets/Icons/up-arrow.png" alt="Upvote icon" width="15" height="15"> 24 helpful</span>
+                <a href="#" class="stretched-link">View note</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-outline-primary btn-lg px-4">Browse all notes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="py-5 bg-body-tertiary border-top border-bottom">
+      <div class="container py-lg-4">
+        <div class="text-center mx-auto mb-5 col-lg-7">
+          <h2 class="fw-bold">How it works</h2>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="bg-secondary-subtle text-secondary border rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-4 small"><img src="/assets/Icons/browse.png" alt="Browse icon" width="32" height="32"></div>
+            <h3 class="h5">1. Browse</h3>
+            <p class="text-body-secondary">Search or filter notes by subject and education level. Guests can preview what is available.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-secondary-subtle text-secondary border rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-4 small"><img src="/assets/Icons/account.png" alt="Create account icon" width="32" height="32"></div>
+            <h3 class="h5">2. Create an account</h3>
+            <p class="text-body-secondary">Sign up with your email and password to unlock uploads, upvotes, comments, and reports.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-secondary-subtle text-secondary border rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-4 small"><img src="/assets/Icons/shareAndHelp.png" alt="Share icon" width="32" height="32"></div>
+            <h3 class="h5">3. Share and help</h3>
+            <p class="text-body-secondary">Upload your own notes and upvote the ones that helped you study.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="guidelines" class="py-5">
+      <div class="container py-lg-4">
+        <div class="text-center mx-auto mb-5 col-lg-7">
+          <h2 class="fw-bold">Community guidelines</h2>
+          <p class="text-body-secondary">A shared library only works if people can trust it.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">Own notes only</h3>
+                <p class="card-text text-body-secondary mb-0">Upload only your own work. If you reference a book or other source, cite it.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">Community moderation</h3>
+                <p class="card-text text-body-secondary mb-0">Anyone with an account can flag inappropriate or low-quality notes. Once a note reaches the flag threshold, it is hidden automatically and sent to an admin for review.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">Fair enforcement</h3>
+                <p class="card-text text-body-secondary mb-0">Admins review flagged notes and can approve or remove them. Accounts that break the rules may be warned, suspended, or banned.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-4 mb-0"><a href="#" class="link-secondary">Read the full content policy</a></p>
+      </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white text-center">
+      <div class="container py-lg-3">
+        <h2 class="fw-bold">Got good notes? Share them.</h2>
+        <p class="lead mb-4">Join Libre Notes for free and help another student study smarter.</p>
+        <a href="#" class="btn btn-light btn-lg px-4">Create a free account</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-4 bg-black text-white-50">
+    <div class="container">
+      <div class="row gy-3 align-items-center text-center text-md-start">
+        <div class="col-md-5">
+          <span class="text-white fw-semibold">Libre Notes</span>
+          <span class="d-block small">Free study notes, shared by students.</span>
+        </div>
+        <div class="col-md-7">
+          <ul class="nav justify-content-center justify-content-md-end">
+            <li class="nav-item"><a class="nav-link text-white-50" href="#browse">Browse</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#how-it-works">How it works</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#guidelines">Guidelines</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#">Log in</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="small text-center mb-0">© 2026 Libre Notes. Free forever. No ads, no premium tiers.</p>
+    </div>
+  </footer>
+
+  <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
