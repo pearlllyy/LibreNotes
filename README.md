@@ -1,7 +1,5 @@
 # LibreNotes
 
-# LibreNotes
-
 ## What is LibreNotes?
 
 LibreNotes is a free, open web platform where students can create an account and share their own study notes with others. Notes can be typed directly into the platform or uploaded as files (PDF or images).
